@@ -22,22 +22,30 @@ a, .secondary-text {
 button {
     background: #3882F6;
     color: white;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
 }
 
 img {
-    width: 100px;
+    width: 200px;
     height: auto;
-    border: solid lightblue 5px;
+    border: solid rgb(0, 123, 255) 5px;
+    border-radius: 10px;
 }
 
 .header, .hero, .footer {
-    padding: 10px 70px;
+    padding: 20px 100px;
     display: flex;
     background-color: #1F2937;
+    flex: auto;
 }
 
 .hero {
-    padding: 50px 70px;
+    padding: 100px 100px;
+    gap: 30px;
 }
 
 .header {
@@ -55,10 +63,16 @@ img {
     align-self: flex-start;
 }
 
+.hero-gif {
+    width: 500px;
+    height: auto;
+}
+
 .info {
     display: flex;
     flex-direction: column;
-    padding: 20px 100px;
+    padding: 100px 100px;
+    gap: 30px;
 }
 
 .head {
@@ -71,13 +85,20 @@ img {
 
 .media-objects {
     display: flex;
-    
+    justify-content: space-between;
 }
 
 .object {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-end;
+}
+
+.img-desc {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 200px;
 }
 
 .quote {
@@ -85,12 +106,13 @@ img {
     flex-direction: column;
     align-items: center;
     background-color: #E5E7EB;
-    padding: 60px;
+    padding: 100px 60px;
 }
 
 .quote-info {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .quote-text, .author {
@@ -106,29 +128,42 @@ img {
 
 .author {
     font-weight: bold;
+    font-size: 20px;
     align-self: flex-end;
 }
 
 .cta {
-    padding: 50px 70px;
+    padding: 100px 200px;
 }
 
 .blue-box {
     background-color: #3882F6;
     display: flex;
     justify-content: space-between;
-    padding: 30px 70px;
+    padding: 50px 100px;
+    border-radius: 10px;
 }
 
 .bb-text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cta-button {
+    display: flex;
+    align-self: center;
+    border: 2px solid white;
 }
 
 p.head, p.subtext {
     color: white;
     margin: 0;
+}
+
+p.head {
+    font-size: 24px;
 }
 
 .footer {
